@@ -1,5 +1,4 @@
 import { ArrowSmallRightIcon } from '@heroicons/react/24/solid'
-import React from 'react'
 import { motion } from 'framer-motion';
 
 function CaseStudies() {
@@ -9,14 +8,14 @@ function CaseStudies() {
             id: 1,
             logo: 'https://bubbleworld.site/assets/images/image08.png?v=87f0ea9c',
             title: '100 QUALIFIED LEADS IN JUST 4 DAYS AND 150 FOLLOWERS IN 30 DAYS ALL ORGANICALLY.',
-            featuredImg: 'https://bubbleworld.site/assets/images/image03.jpg?v=87f0ea9c',
+            featuredImg: 'https://bubbleworld.in/wp-content/uploads/2023/08/image03.jpg',
             btnLink: 'https://calendly.com/bubbleworld/30min?month=2023-06',
         },
         {
             id: 2,
             logo: 'https://bubbleworld.site/assets/images/image06.jpg?v=87f0ea9c',
             title: 'REDUCED THEIR OPERATIONAL COST FROM $2,000 TO $300.',
-            featuredImg: 'https://bubbleworld.site/assets/images/image04.jpg?v=87f0ea9c',
+            featuredImg: 'https://bubbleworld.in/wp-content/uploads/2023/08/image04-1-1536x992.jpg',
             btnLink: 'https://calendly.com/bubbleworld/30min?month=2023-06',
         }
     ]
@@ -37,7 +36,7 @@ function CaseStudies() {
                             transition={{ type: "spring", stiffness: 100, duration: 1, ease: "linear", }}
                             className="caseStudy-logoContainer">
 
-                            <img src={CaseStudiesData[0].logo} className='caseStudy-logo' alt="" srcset="" />
+                            <img src={CaseStudiesData[0].logo} className='caseStudy-logo' alt="" />
                         </motion.div>
                         <motion.h2
                             initial={{ y: 50, opacity: 0 }}
@@ -84,7 +83,7 @@ function CaseStudies() {
                             transition={{ type: "spring", stiffness: 100, duration: 1, ease: "linear", }}
                             className="caseStudy-logoContainer">
 
-                            <img src={CaseStudiesData[1].logo} className='caseStudy-logo' alt="" srcset="" />
+                            <img src={CaseStudiesData[1].logo} className='caseStudy-logo' alt="" />
                         </motion.div>
                         <motion.h2
                             initial={{ y: 50, opacity: 0 }}
