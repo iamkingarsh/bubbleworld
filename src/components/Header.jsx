@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-scroll';
 import './css/components.css';
 import { PhoneIcon } from '@heroicons/react/24/solid';

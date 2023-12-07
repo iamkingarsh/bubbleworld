@@ -1,32 +1,32 @@
-import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowSmallRightIcon } from '@heroicons/react/24/solid';
 import ReactPlayer from 'react-player'
 
+const instaContent = [
+    {
+        id: 1,
+        video: 'https://youtube.com/shorts/_O34CKDX40M?feature=share',
+        title: 'Creato',
+        description: 'Restraunt',
+        live: 'https://youtube.com',
+    },
+    {
+        id: 2,
+        video: 'https://youtube.com/shorts/yTptQySD1kM?feature=share',
+        title: 'Sheroes by sheena kang',
+        description: 'Clothing',
+        live: 'https://youtube.com',
+    },
+    {
+        id: 2,
+        video: 'https://youtube.com/shorts/w-VBETDxPPE?feature=share',
+        title: 'Aasa by simran',
+        description: 'Designer',
+        live: 'https://bubbleworld.site/assets/images/slideshow03-df3abccc.jpg?v=87f0ea9c',
+    },
+];
 function InstagramReel() {
-    const [instaContent, setInstaContent] = useState([
-        {
-            id: 1,
-            video: 'https://youtube.com/shorts/_O34CKDX40M?feature=share',
-            title: 'Creato',
-            description: 'Restraunt',
-            live: 'https://youtube.com',
-        },
-        {
-            id: 2,
-            video: 'https://youtube.com/shorts/yTptQySD1kM?feature=share',
-            title: 'Sheroes by sheena kang',
-            description: 'Clothing',
-            live: 'https://youtube.com',
-        },
-        {
-            id: 2,
-            video: 'https://youtube.com/shorts/w-VBETDxPPE?feature=share',
-            title: 'Aasa by simran',
-            description: 'Designer',
-            live: 'https://bubbleworld.site/assets/images/slideshow03-df3abccc.jpg?v=87f0ea9c',
-        },
-    ]);
+
     const containerVariants = {
         hidden: {
             opacity: 0,
@@ -70,7 +70,7 @@ function InstagramReel() {
                         <h2>{content.title}</h2>
                         <p>{content.description}</p>
                         {/* <div className="button-area"> */}
-                        <button button onClick={() => window.location.href = content.live} className="btn btnWithIcon">View Live
+                        <button onClick={() => window.location.href = content.live} className="btn btnWithIcon">View Live
                             <div className='btn-icon'>
                                 < ArrowSmallRightIcon />
                             </div>

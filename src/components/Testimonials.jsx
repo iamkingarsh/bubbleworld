@@ -1,4 +1,3 @@
-import React from 'react'
 import { motion } from 'framer-motion';
 
 function Testimonials() {
@@ -9,7 +8,7 @@ function Testimonials() {
             designation: 'Homeopath ',
             org: '"DYNAMIC HOMEOPATHY CLINIC"',
             description: 'BubbleWorld truly excelled in creating an impactful website for my business. They understood the importance of a strong online presence and designed a website that perfectly captured the essence of my brand. The website not only impressed me but also resonated with my target audience, leading to increased engagement and conversions.Throughout the process, BubbleWorld displayed a remarkable commitment to excellence. They meticulously analyzed my business, industry, and competition to develop strategies that would yield optimal results.',
-            VideoOrImage: 'https://bubbleworld.site/assets/videos/video08.mp4?v=87f0ea9c',
+            VideoOrImage: 'https://bubbleworld.in/wp-content/uploads/2023/08/video08-1.mp4',
         },
         {
             id: 2,
@@ -17,32 +16,11 @@ function Testimonials() {
             designation: 'Cafe Owner',
             org: '"PURE WHITE CAFE"',
             description: 'BubbleWorld truly excelled in creating an impactful website for my business. They understood the importance of a strong online presence and designed a website that perfectly captured the essence of my brand. The website not only impressed me but also resonated with my target audience, leading to increased engagement and conversions.Throughout the process, BubbleWorld displayed a remarkable commitment to excellence. They meticulously analyzed my business, industry, and competition to develop strategies that would yield optimal results.',
-            VideoOrImage: 'https://bubbleworld.site/assets/images/image01.jpg?v=87f0ea9c',
+            VideoOrImage: 'https://bubbleworld.in/wp-content/uploads/2023/08/image01.jpg',
         }
     ]
-    const containerVariants = {
-        hidden: {
-            opacity: 0,
-        },
-        visible: {
-            opacity: 1,
-            transition: {
-                staggerChildren: 0.2,
-            },
-        },
-    };
 
-    const cardVariants = {
-        hidden: {
-            opacity: 0,
-            y: 20,
 
-        },
-        visible: {
-            opacity: 1,
-            y: 0,
-        },
-    };
     return (
         <div className='Testimonials'>
             <motion.div

@@ -1,62 +1,62 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import './css/components.css'
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import 'react-slideshow-image/dist/styles.css';
 import { ArrowSmallRightIcon } from '@heroicons/react/24/solid';
 
 const slideImages1 = [
     {
-        url: 'https://bubbleworld.site/assets/images/slideshow01-057217d7.jpg?v=87f0ea9c',
+        url: 'https://bubbleworld.in/wp-content/uploads/2023/08/03-2-1.png',
         caption: 'Slide 1'
     },
     {
-        url: 'https://bubbleworld.site/assets/images/slideshow01-1ff47020.jpg?v=87f0ea9c',
+        url: 'https://bubbleworld.in/wp-content/uploads/2023/08/06-1.png',
         caption: 'Slide 2'
     },
     {
-        url: 'https://bubbleworld.site/assets/images/slideshow01-e287eb66.jpg?v=87f0ea9c',
+        url: 'https://bubbleworld.in/wp-content/uploads/2023/08/05-1-1.png',
         caption: 'Slide 3'
     },
 ];
 
 const slideImages2 = [
     {
-        url: 'https://bubbleworld.site/assets/images/slideshow03-df3abccc.jpg?v=87f0ea9c',
+        url: 'https://bubbleworld.in/wp-content/uploads/2023/08/03-1-1.png',
         caption: 'Slide 1'
     },
     {
-        url: 'https://bubbleworld.site/assets/images/slideshow03-84ec3f02.jpg?v=87f0ea9c',
+        url: 'https://bubbleworld.in/wp-content/uploads/2023/08/04-1-1.png',
         caption: 'Slide 2'
     },
     {
-        url: 'https://bubbleworld.site/assets/images/slideshow03-b2771422.jpg?v=87f0ea9c',
+        url: 'https://bubbleworld.in/wp-content/uploads/2023/08/05-2.png',
         caption: 'Slide 3'
     },
     {
-        url: 'https://bubbleworld.site/assets/images/slideshow03-51787109.jpg?v=87f0ea9c',
+        url: 'https://bubbleworld.in/wp-content/uploads/2023/08/03-1-1.png',
         caption: 'Slide 4'
     },
 ];
 
 const slideImages3 = [
     {
-        url: 'https://bubbleworld.site/assets/images/slideshow02-9eda7986.jpg?v=87f0ea9c',
+        url: 'https://bubbleworld.in/wp-content/uploads/2023/08/WhatsApp-Image-2023-08-28-at-2.48.15-PM.jpeg',
         caption: 'Slide 1'
     },
     {
-        url: 'https://bubbleworld.site/assets/images/slideshow02-c8b6e856.jpg?v=87f0ea9c',
+        url: 'https://bubbleworld.in/wp-content/uploads/2023/08/WhatsApp-Image-2023-08-28-at-2.49.14-PM.jpeg',
         caption: 'Slide 2'
     },
     {
-        url: 'https://bubbleworld.site/assets/images/slideshow02-f9dc67ac.jpg?v=87f0ea9c',
+        url: 'https://bubbleworld.in/wp-content/uploads/2023/08/WhatsApp-Image-2023-08-28-at-2.50.01-PM.jpeg',
         caption: 'Slide 3'
     },
     {
-        url: 'https://bubbleworld.site/assets/images/slideshow02-c9252378.jpg?v=87f0ea9c',
+        url: 'https://bubbleworld.in/wp-content/uploads/2023/08/WhatsApp-Image-2023-08-28-at-2.49.14-PM.jpeg',
         caption: 'Slide 4'
     },
     {
-        url: 'https://bubbleworld.site/assets/images/slideshow02-e27e8ace.jpg?v=87f0ea9c',
+        url: 'https://bubbleworld.in/wp-content/uploads/2023/08/WhatsApp-Image-2023-08-28-at-2.50.01-PM.jpeg',
         caption: 'Slide 5'
     },
 ];
@@ -109,7 +109,7 @@ function BrandKits() {
                         whileInView={{ y: 0, opacity: 100 }}
                         transition={{ type: "spring", stiffness: 100, duration: 1, delay: 0.2, ease: "linear" }}
                     >
-                        Revolutionize your brand identity that helps you stand out in today's competitive marketplace. Our comprehensive range of branding services is designed to elevate your business to new heights.
+                        Revolutionize your brand identity that helps you stand out in today&apos;s competitive marketplace. Our comprehensive range of branding services is designed to elevate your business to new heights.
                     </motion.p>
                     <motion.div
                         initial={{ y: 50, opacity: 0 }}
@@ -117,7 +117,7 @@ function BrandKits() {
                         transition={{ type: "spring", stiffness: 100, duration: 1, delay: 0.5, ease: "linear" }}
                     >
                         <motion.button onClick={() => window.location.href = 'https://calendly.com/bubbleworld/30min?back=1&month=2023-06'} className="btn btnWithIcon">
-                            Let's Talk
+                            Let&apos;s Talk
                             <div className='btn-icon'>
                                 < ArrowSmallRightIcon />
 
