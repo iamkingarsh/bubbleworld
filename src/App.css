@@ -1,0 +1,70 @@
+body {
+  overflow-x: hidden;
+}
+
+.btn {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: inter;
+  background-color: var(--primary-color);
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+
+.btn:hover,
+.btn:focus {
+  transform: translateY(-4px);
+  box-shadow: 0 0 80px 3px var(--primary-color);
+
+
+
+}
+
+.btn-icon {
+  background-color: #d43250;
+  width: 15px;
+  height: 15px;
+  padding: 6px;
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.btnWithIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+
+
+.noise {
+  z-index: -20;
+  position: absolute;
+  inset: 0;
+  background-image: url(https://astro.build/assets/noise.webp);
+  opacity: 1.4;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+  height: 1200%;
+}
+
+@media screen and (max-width: 767px) {
+
+
+
+  .noise {
+    height: 1300%;
+  }
+
+  .btn {
+    font-size: 15px;
+  }
+
+}
